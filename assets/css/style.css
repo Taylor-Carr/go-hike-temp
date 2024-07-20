@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 13px 40px;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    position: fixed; /* Fix the header to the top */
+    top: 0; /* Align to the top */
+    left: 0;
+    background-color: #F3FADC;
+    padding: 10px 0;
+    z-index: 1000; /* Ensure the header is above all other content */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width:700px; /* Adjust max-width as needed */
+}
+
+.nav-group {
+    display: flex;
+    gap: 20px; /* Control the spacing between nav items within each group */
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 900;
+    padding: 10px 20px; /* Adjust padding to control space */
+    letter-spacing: 1.5px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline; 
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px; /* Adjust padding to control space around the logo */
+}
+
+.header .logo-img {
+    height: 65px;
+}
+
+.main-content {
+    max-width: 400px; /* Adjust this value as needed */
+    margin: 100px auto 0; /* Ensure there's space for the fixed header */
+    text-align: center;
+    z-index: 3; /* Ensure the content is above the overlay */
+}
+
+.title {
+    font-family: 'Lato';
+    font-size: 2rem; /* Adjust the font size as needed */
+    font-weight: 400;
+    margin-bottom: 25px;
+    margin-top: 35px;
+    line-height: 1.2; /* Adjust the line height for better spacing between lines */
+    color: #333;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.description {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 45px;
+}
+
+.pricing-button {
+    margin-top: 10px;
+    margin-left: 18px;
+    margin-right: 18px;
+    border: 1px solid #333;
+    padding: 8px 28px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 20px;
+    color: white;
+    min-width: 600px; /* Minimum width for the footer */
+    margin: 0 auto; /* Center the footer horizontally */
+}
+
+.footer-center {
+    text-align: left;
+    width: 100%; /* Ensure the footer center takes the full width */
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row; /* Display items in a row */
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Add space between items */
+    justify-content: flex-start; /* Align items to the left */
+}
+
+.footer-text-phone {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #385B4F;
+    letter-spacing: 1px;
+}
